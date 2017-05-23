@@ -1,0 +1,4 @@
+include("../Utils/Utils.php");
+$oUtils = new Utils();
+
+$oUtils->pre("variable aqui");
