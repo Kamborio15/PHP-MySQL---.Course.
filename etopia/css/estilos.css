@@ -1,0 +1,13 @@
+.enlace{
+	color: #CF0008;
+}
+.cell{
+	border: 1px solid black;
+	background-color: lightgrey;
+}
+#contenidoTexto{
+	padding: 15px;
+}
+h2{
+	color: #CF0008;
+}

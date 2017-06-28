@@ -1,0 +1,8 @@
+// Sentencias sql para borrar registros de padres, niños, inscripciones 
+// en datos introducidos sin recoger los datos del formulario POST
+
+
+
+DELETE FROM `etopia`.`inscripcion` WHERE `inscripcion`.`id` = 1;
+DELETE FROM `etopia`.`ninos` WHERE `ninos`.`id` = 1;
+DELETE FROM `etopia`.`padres` WHERE `padres`.`id` = 1;

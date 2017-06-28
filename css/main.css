@@ -1,0 +1,23 @@
+/* Estilos para que el pie bottom */
+html, body {
+    height: 100%;
+}
+
+#wrapper {
+	min-height:100%;
+	position:relative;
+}
+
+#content {
+	padding-bottom:50px;   /* Height of the footer element */
+}
+
+footer {
+	width:100%;
+	height:50px;
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-color: #CCC;
+}
+/* Fin pie bottom */
