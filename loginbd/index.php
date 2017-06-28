@@ -1,12 +1,14 @@
 
 <?php 
+session_start();
+
 $titulo = "Index";
 $descripcion = "";
-include($_SERVER['DOCUMENT_ROOT']."/inc/header2.php"); ?>
-
+include($_SERVER['DOCUMENT_ROOT']."/inc/header2.php"); 
+if(isset($_SESSION["id"])){ ?>
 	<ul class="list-group">
 
-		<h2>Examen</h2>
+	<h2>Examen</h2>
 		<li class="list-group-item"><a href="/examen/index.php"><span>Examen (tambien accesible por url /examen)</span></a></li>
 		
 	<h2>Ejercicios PHP, HTML y CSS</h2>
@@ -51,14 +53,20 @@ include($_SERVER['DOCUMENT_ROOT']."/inc/header2.php"); ?>
 		<li class="list-group-item"><a href="/etopia/index.php"><span>Index</span></a></li>
 		<li class="list-group-item"><a href="/etopia/colonias.php"><span>Colonias</span></a></li>
 		
-	</ul>
-	<ul class="list-group">
-	<h2>SESSION y COOKIES</h2>
 
-		<li class="list-group-item"><a href="/loginbd/ejercicio27.php"><span>Index</span></a></li>
-		
 	</ul>
 
-<?php include($_SERVER['DOCUMENT_ROOT']."/inc/footer2.php"); ?>
+
+<a class="btn btn-primary" href="logout.php">Cerrar Sesión</a>
+
+
+<?php include($_SERVER['DOCUMENT_ROOT']."/inc/footer2.php"); 
+
+}
+else{
+	header("location: ejercicio27.php");
+}
+
+?>
 
 
